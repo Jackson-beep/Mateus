@@ -1,39 +1,70 @@
-body{
-    background-color: lightcyan;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
-.container{
-    display: flex;
-    flex-direction: row;
-}
+    .container {
+      display: flex;
+      min-height: 100vh; /* altura da tela toda */
+    }
 
-.menu{
-    background-color:lightblue ;
-    padding: 1rem; 
-    margin-right: 1rem;
-    width:  30%;
+    /* Coluna do texto */
+    .lado-esquerdo {
+      background-color: #fff;
+      color: #000;
+      width: 65%; /* lado do conteúdo */
+      padding: 30px;
+    }
+
+    /* Coluna da faixa azul */
+    .lado-direito {
+      background-color: #1e3c72; /* azul */
+      width: 35%; /* lado azul */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+    .lado-direito img {
+      width: 75%;
+      height:27% ;
+      object-fit: cover;
     
-}
-.conteudo{
-    padding: 2rem;
-   width:  70%;
-}
-.item-menu{
-    padding: 0.6rem;
-    margin: 0.7rem 0.7rem 0.7rem 0.7rem;
-    list-style: none;
+    }
+
+    h2 {
+      margin-top: 20px;
+      color: #1e3c72;
+    }
+    h4{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+    .menu {
+  background-color: #1e3c72; /* fundo azul igual ao lado direito */
+  padding: 10px;
 }
 
-
-
-.item-menu:hover{
-    background-color: cornflowerblue;
+.menu ul {
+  list-style: none; /* tira as bolinhas */
+  margin: 0;
+  padding: 0;
+  display: flex; /* deixa os itens lado a lado */
+  gap: 20px; /* espaço entre eles */
 }
-.section{
-margin-top: 5rem;
-padding: 2rem;
+
+.menu a {
+  text-decoration: none; /* tira o sublinhado */
+  color: #fff; /* texto branco */
+  font-weight: bold;
+  transition: color 0.3s;
 }
-#sec1{
-    background-color: beige;
+
+.menu a:hover {
+  color: #ffcc00; /* cor ao passar o mouse */
 }
